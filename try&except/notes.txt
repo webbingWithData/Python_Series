@@ -1,0 +1,39 @@
+1. What is an Error?
+An error is something that interrupts the normal flow of a program. For example, if we divide a number by zero or try to access a variable that does not exist, Python throws an error.
+If we don’t handle it, our program will stop running immediately.
+
+2. Why do we need Error Handling?
+Error handling makes our programs more reliable and user-friendly. Instead of crashing, we can give proper messages or take alternative actions. This ensures smooth execution of the program.
+
+Explaining try & except
+
+The try block contains the code which might cause an error.
+
+The except block contains the code that runs if an error occurs.
+
+So basically:
+
+try → Try to run this code.
+except → If there is an error, handle it here instead of stopping the program.
+
+Example 1: Division by Zero
+try:
+    num1 = 10
+    num2 = 0
+    result = num1 / num2
+    print("Result is:", result)
+except ZeroDivisionError:
+    print("Error: You cannot divide a number by zero!")
+
+
+Explanation: Normally, dividing by zero gives an error and stops the program. But with try-except, we catch the error and print a friendly message instead.
+
+🔹 Example 2: Invalid Input
+try:
+    value = int(input("Enter a number: "))
+    print("You entered:", value)
+except ValueError:
+    print("Error: Please enter a valid integer!")
+
+
+👉 Explanation: If the user types something like "abc", instead of crashing, our program will handle it gracefully.
