@@ -1,0 +1,53 @@
+Loop Control Statements:-
+Loop control statements in Python are special statements that help control the execution of loops (for or while).
+
+Loops help us repeat a block of code multiple times.
+
+In Python, we mostly use for loops and while loops.
+
+“But sometimes, we don’t just want the loop to run blindly. We want to control it. And that’s where loop control statements come in.”
+
+🔹 break:-
+The break statement is used when you want to stop the loop completely, no matter if all iterations are done or not.
+
+Example (Real-life analogy):
+Imagine you’re searching for your favorite chips in a supermarket aisle. The moment you find it, you stop searching. That’s break.
+
+for item in ["apple", "banana", "chips", "milk"]:
+    if item == "chips":
+        print("Found chips! Stopping the search.")
+        break
+    print("Looking at:", item)
+
+->continue:-
+
+The continue statement is used when you want to skip the current iteration and move on to the next one.
+
+Example (Real-life analogy):
+Suppose you’re checking exam papers. If one paper is blank, you don’t waste time on it — you just skip and check the next. That’s continue.
+
+for num in range(1, 6):
+    if num == 3:
+        print("Skipping number 3")
+        continue
+    print("Number is:", num)
+
+🔹 pass
+
+The pass statement does nothing — literally. It’s just a placeholder when you don’t want to write any code yet but need to keep the syntax valid.
+
+Example (Real-life analogy):
+Think of it like reserving a seat in a theater. You don’t use it now, but you mark it for later. That’s pass.
+
+for i in range(5):
+    if i == 2:
+        pass  # placeholder for future code
+    print("i is:", i)
+
+
+
+break → exits the loop completely
+
+continue → skips the current iteration
+
+pass → does nothing, just a placeholder

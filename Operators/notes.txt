@@ -1,0 +1,11 @@
+Operators:-  They are used to perform calcualations on variables and data.
+
+Arithmetic Operators:-  +,-,/,*
+Comparison Operators;- >, <, ==, !=
+Logical Operators:- and , or , not
+Assignment Operators :- +=, -=, *=, /=
+Bitwise Operators number ke binary form pe kaam krte h
+&, | , >>, <<, ~, ^
+identity Operators is not , is
+
+

@@ -1,0 +1,58 @@
+Iteration over Lists:-
+
+let's discus iteration first:-
+In a very simple word it is the process of accessing elements from the list one by one
+
+fruits = ["apple", "banana", "mango","guava", "grapes", "jackfruit"]
+
+for fruit in fruits:
+    print(fruit)
+
+here for loop will print the element of fruits list one by one
+
+now, if you want elements with indexes of the list then we can use enumerate() function for that:-
+
+for index, fruit in enumerate(fruits):
+    print(index, fruit)
+
+
+Nested List:-
+A nested list is a list within another list, which is useful for representing matrices or tables. We can access nested elements by chaining indexes.
+
+
+matrix = [[1, 2, 3],
+          [4, 5, 6],
+          [7, 8, 9]]
+
+
+for accessing elements of the matrix by index:-
+print(matrix[1][1])
+
+and if You want to print each elements of your matrix in one go then you have to run nested loops
+
+for row in matrix:
+    for num in row:
+        print(num, end=" ")
+
+
+list comprehension:-
+a concise way to create lists using a single line of code. It is useful for applying an operation or filter to items in an iterable, such as a list or range.
+
+simple for loop
+square = []
+for i in range(1,6):
+    square.append(i**2)
+
+using list comprehension;-
+squares = [x**2 for x in range(1, 6)]
+print(square)
+
+you can even add a conditon in it as well:- 
+
+evens = [x for x in range(10) if x % 2 == 0]
+print(evens)
+
+you can even use it in matrix as well
+flattened = [num for row in matrix for num in row]
+print(flattened)
+

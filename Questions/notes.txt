@@ -1,0 +1,33 @@
+Homework Questions (Beginner Level)
+
+Tuples:-
+
+Create a tuple of your 5 favorite fruits and print the second and fourth fruit.
+
+Try to change one element of the tuple — what happens? Why?
+
+Write a program to find the length of a tuple.
+
+Dictionaries:-
+
+Create a dictionary of 3 students with their names as keys and their ages as values. Print each name with age.
+
+Add a new student to the dictionary and then remove one existing student.
+
+Write a program to check if a key exists in a dictionary.
+
+Sets:-
+
+Create two sets: {1, 2, 3, 4} and {3, 4, 5, 6}. Find their union and intersection.
+
+Add a new element into a set and try to add a duplicate element — what happens?
+
+Write a program to remove an element from a set safely (without error if the element doesn’t exist).
+
+Functions:-
+
+Write a function that takes two numbers and returns their sum.
+
+Write a function that checks if a number is even or odd.
+
+Write a function with a default argument (for example, a function that greets a user, defaulting to "Guest").

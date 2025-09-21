@@ -1,0 +1,112 @@
+1. What is a Set in Python?
+
+In Python, a set is a collection that is unordered, unindexed, and does not allow duplicates.
+Think of it like a basket of fruits  — you don’t care about the order, you just want unique items inside the basket.
+
+Code Example:
+
+fruits = {"apple", "banana", "orange", "apple"}
+print(fruits)
+
+
+2. Creating a Set
+
+"We can create sets using curly braces {} or the set() constructor."
+
+Code Example:
+
+my_set = {1, 2, 3}
+print(my_set)
+
+another_set = set([1, 2, 2, 3, 4])
+print(another_set)
+
+3. Accessing Items
+
+Unlike lists or tuples, sets are unordered, so you can’t use indexes. But you can loop through them.
+
+Code Example:
+
+for item in {"pen", "book", "pencil"}:
+    print(item)
+
+4. Adding & Updating Items
+
+We use .add() for single items and .update() for multiple.
+
+Code Example:
+
+my_set = {1, 2}
+my_set.add(3)
+my_set.update([4, 5])
+print(my_set)
+
+5. Removing Items
+
+.remove(item) → gives error if item not found
+
+.discard(item) → safe removal
+
+.pop() → removes random item
+
+Code Example:
+
+my_set = {10, 20, 30}
+my_set.remove(20)
+my_set.discard(40)  
+print(my_set)
+
+6. Set Operations (Real Power 💪)
+
+Here’s where sets shine — think of them like math sets.
+
+Union (combine)
+
+a = {1, 2, 3}
+b = {3, 4, 5}
+print(a | b)   # or a.union(b)
+
+
+Intersection (common elements)
+
+print(a & b)   # or a.intersection(b)
+
+
+Difference (what’s in A but not B)
+
+print(a - b)
+
+
+Symmetric Difference (in either, but not both)
+
+print(a ^ b)
+
+
+Real world example:
+Suppose you have two groups of students: one playing cricket, one playing football. With sets, you can easily find who plays both, who plays only cricket, and so on!
+
+7. Other Set Methods
+
+len() → number of items
+
+clear() → remove all
+
+copy() → make a duplicate
+
+issubset(), issuperset(), isdisjoint()
+
+Example:
+
+a = {1, 2}
+b = {1, 2, 3, 4}
+print(a.issubset(b))   # True
+print(b.issuperset(a)) # True
+
+8. Frozen Sets
+
+There’s also something called frozenset, which is an immutable version of set. Once created, you can’t change it.
+
+Example:
+
+fset = frozenset([1, 2, 3])
+# fset.add(4) → This will give an error

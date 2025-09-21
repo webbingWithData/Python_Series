@@ -1,0 +1,69 @@
+Topics:-
+
+Variables:- Variables are used to store data that can be referenced and manipulated during program execution. 
+Basically it is a container for storing data of different different data types.
+
+x = 10   # integer
+y = 3.14 # float
+name = "Ankit" # string
+is_python_easy = True # boolean
+
+
+Naming Convention for Variables:-
+i) only contains letters, digits and underscore(_)
+ii) Can't start with a digit
+iii) case sensitive (myVar and myvar are different)
+iv) avoid using python keywords (if, else, for)
+
+Valid Examples
+age = 21
+_city = "Mumbai"
+total_score = 95
+
+
+Invalid Example:-
+ 1name = "Error"
+function = 10
+user-city = "Mumbai"
+
+
+
+Data Types:- It simply means the kind of value a variable holds.
+
+Every Vaiables in Python stores some sort of data, and that can be of a certain type - like integer, floats, strings, Boolean.
+
+By default in Python these are the builtin data types:-
+
+Numeric Data:-
+Integer:- whole numbers, positive and negative. (5, -10)
+float = Floating-pointy numbers(numbers with decimal point)(3.14, -0.5)
+Complex = 6 + 2i
+
+Sequence Types
+String:- Sequence of characters like "Hello Python".
+list:- Ordered, mutable collection of items, enclosed in square brackets.
+tuple:- Ordered immutable collection of items, enclosed in square bracket.
+range:- Represents an immutable sequence of numbers, often used in loops. e.g., 
+
+Set Types:-
+set:- Unordered collection of unique items, enclosed in curly braces, e.g., {1,2,3}
+frozenset:- Immutable version of a set.
+
+
+Mapping Type:-
+dict:- Dictionaries {"name":"Rayan"}
+
+
+Boolean :-  True or False
+
+Note:- In Python variables do not require explicit declaration of type
+
+
+
+
+Getting the type of Variable :-
+In python we basically use type() function to check the type ofg particular variable
+
+
+You can even delete a variable using del keyword
+

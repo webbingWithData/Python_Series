@@ -1,0 +1,116 @@
+Python gives us different ways to pass arguments into functions. There are mainly four types:
+
+Default Arguments:-
+Sometimes we want to give a function a backup value, just in case the user doesn’t pass one. That’s where default arguments come in.
+
+Example:
+
+def greet(name, city="Delhi"):
+    print("Hello", name, "from", city)
+
+greet("Ankit")
+
+
+Output:
+
+Hello Ankit from Delhi
+
+
+Here, since I didn’t pass the city, it used the default value Delhi.
+
+Keyword Arguments:-
+With keyword arguments, we can pass values using the parameter names. This means the order doesn’t matter.
+
+Example:
+
+def greet(fname, lname):
+    print("Welcome,", fname, lname)
+
+greet(lname="Singh", fname="Rahul")
+
+
+Output:
+
+Welcome, Rahul Singh
+
+
+Notice how I swapped the order but still got the right result.
+
+Required Arguments:-
+These are the most straightforward ones. If the function expects three arguments, you must provide exactly three.
+
+Example:
+
+def greet(fname, lname, age):
+    print(fname, lname, "is", age, "years old.")
+
+greet("Priya", "Sharma", 22)
+
+
+Output:
+
+Priya Sharma is 22 years old.
+
+
+But if I try:
+
+greet("Priya", "Sharma")
+
+
+I’ll get an error saying a required argument is missing.
+
+Variable-Length Arguments:-
+Sometimes we don’t know how many values we’ll pass. Python handles this with variable-length arguments. There are two types here.
+
+Arbitrary Arguments (*args)
+
+def friends(*names):
+    print("My friends are:", names)
+
+friends("Rohit", "Aman", "Neha")
+
+
+Output:
+
+My friends are: ('Rohit', 'Aman', 'Neha')
+
+
+Here, the function treats all the extra values as a tuple.
+
+Keyword Arbitrary Arguments (**kwargs)
+
+def intro(**info):
+    print("Name:", info["name"])
+    print("Age:", info["age"])
+
+intro(name="Kunal", age=20)
+
+
+Output:
+
+Name: Kunal
+Age: 20
+
+
+Here, the arguments are stored like a dictionary.
+
+
+Return Statement
+
+Finally, let’s talk about the return statement. Instead of just printing, sometimes we want the function to give us back a value that we can reuse later.
+
+Example:
+
+def square(num):
+    return num * num
+
+result = square(6)
+print("Square is:", result)
+
+
+Output:
+
+Square is: 36
+
+
+So the return keyword sends the result back to where the function was called.

@@ -1,0 +1,80 @@
+What is a tuple:-
+In simple words, a tuple is just like a list in Python, but with one major difference — it cannot be changed.
+Once you create a tuple, you can’t add, remove, or modify its elements.
+This property is called immutability.
+It can hold elements of different data types
+
+
+How do we create a Tuple?
+we create it by using ()
+fruits = ("apple", "banana", "cherry")
+print(fruits)
+
+creating tuple with mixed data types
+tup = (5, 'Welcome', 7, 'Geeks')
+print(tup)
+
+
+Python Tuple Basic Operations
+Below are the Python tuple operations.
+Accessing of Python Tuples
+Concatenation of Tuples
+Slicing of Tuple
+Deleting a Tuple
+
+Accessing Elements:-
+print(fruits[0])  
+print(fruits[1])   
+
+Just like lists, tuples are indexed. The first element is at index 0.
+
+Immutablity in Action:-
+fruits[1] = "mango"   
+
+now the question arise is if it can't be updated or modify why do we use it?
+Tuples are useful when you want to make sure your data doesn’t get changed accidentally. They are also faster than lists, so if you’re working with data that should stay constant, tuples are the way to go.
+
+
+Tuple with One Element
+
+single = ("hello",)  
+print(type(single))  # tuple
+
+Notice that little comma? Without it, Python will think it’s just a string inside brackets. So don’t forget the comma when creating a tuple with only one element.
+
+Concatenation of Tuples:-
+Tuples can be concatenated using the + operator. This operation combines two or more tuples to create a new tuple.
+
+Note :- Only the same datatypes can be combined with concatenation, an error arises if a list and a tuple are combined. 
+
+a = (1,2,3,4)
+b = ("apple", "banana", "Orange")
+c = a+b
+print(c)
+
+
+tup = tuple('India is the place of the world leaders.')
+
+# Removing First element
+print(tup[1:])
+
+# Reversing the Tuple
+print(tup[::-1])
+
+# Printing elements of a Range
+print(tup[4:9])
+
+we can delete tuples by using del keyword
+del tup
+
+
+Tuple Unpacking:-
+In Python, the " * " operator can be used in tuple unpacking to grab multiple items into a list. This is useful when you want to extract just a few specific elements and collect the rest together.
+
+tup = (1, 2, "Rahul", 4, 5)
+
+a, *b, c = tup
+
+print(a) 
+print(b) 
+print(c)

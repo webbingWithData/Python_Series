@@ -1,0 +1,33 @@
+What is a For Loop?
+it iterate over sequential data types and repeat the code.
+
+syntax
+for variable in sequence:
+    # code block
+
+
+here the sequence can be list, tuple, string, dictionary or range of numbers
+
+
+Let's understand it through some scenarios:-
+
+1.  String Iteration
+name = "Ankit"
+for letter in name:
+    print(letter)
+
+it will print out each and every characters of the given string
+
+
+2. List Iteration:-
+fruits = ["Apple", "Banana", "Mango", "Orange", "Grapes"]
+
+for fruit in fruits:
+    print(fruit)
+
+3. Range in Loop
+
+for i in range(1, 11):
+    print(i)
+
+4. Multi plication table

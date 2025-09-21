@@ -1,0 +1,53 @@
+Type Casting:-
+Method of converting python variable of a certain datatype into another data Type .
+
+
+In Python there are basically two types of typecasting:-
+i)  Implicit typecasting
+ii) Explicit typecasting
+
+Implicit Type Casting:-
+- Done automatically by Python
+- Python converts smaller data types to larger data types to avoid data loss.
+
+
+x = 10       # int
+y = 2.5      # float
+z = x + y    # int + float → float
+print(z)     # 12.5
+print(type(z)) 
+
+Explicit Type Casting:-
+- We convert type manually using function like:-
+
+int() → converts to integer
+
+float() → converts to float
+
+str() → converts to string
+
+list() → converts to list
+
+tuple() → converts to tuple
+
+set() → converts to set
+
+# string to int
+a = "100"
+b = int(a)
+print(b, type(b))  # 100 <class 'int'>
+
+# int to float
+x = 10
+y = float(x)
+print(y, type(y))  # 10.0 <class 'float'>
+
+# float to string
+pi = 3.14
+s = str(pi)
+print(s, type(s))  # "3.14" <class 'str'>
+
+
+so basically in short in implicit python does it automatically
+but in explicit we have to do it manually using casting function  
+

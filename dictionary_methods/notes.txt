@@ -1,0 +1,78 @@
+
+(1) .key
+This method returns all the keys of the dictionary.
+
+python
+student = {"name": "Rahul", "age": 21, "course": "B.Sc"}
+print(student.keys())
+
+
+---
+
+(2) .values()
+It returns all the values present in the dictionary.
+
+print(student.values())
+
+
+(3).items()
+This method gives both keys and values as tuples inside a list-like structure.
+
+
+print(student.items())
+
+
+(4) .get()
+Safe way to access values. If the key doesn’t exist, it returns `None` instead of throwing an error.
+
+
+print(student.get("name"))     # Rahul
+print(student.get("roll_no"))  # None
+
+
+
+(5).update() 
+Used to add new key-value pairs or update existing ones.  
+
+student.update({"age": 22, "roll_no": 101})
+print(student)
+
+
+
+
+(6) .pop()
+Removes the specified key-value pair.
+
+
+student.pop("course")
+print(student)
+
+
+
+(7) .popitem()
+Removes the last inserted key-value pair from the dictionary.
+
+
+student.popitem()
+print(student)
+
+
+
+(8).clear() 
+Empties the dictionary completely.  
+
+student.clear()
+print(student)
+
+(9) del keyword
+Unlike methods, `del` is a Python keyword used to delete keys or even the entire dictionary.
+
+# Delete a specific key
+del student["age"]
+print(student)
+
+# Delete the whole dictionary
+del student
+
+After deleting the entire dictionary, you cannot access it anymore."
+

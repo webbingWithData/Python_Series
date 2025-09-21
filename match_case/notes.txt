@@ -1,0 +1,7 @@
+match variable:
+    case value1:
+        # action
+    case value2:
+        # action
+    case _:
+        # default action

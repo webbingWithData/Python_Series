@@ -1,0 +1,67 @@
+1. What is a Dictionary?
+
+A dictionary in Python is just like a real dictionary in real life.
+In a real dictionary, you have words and their meanings.
+Similarly, in Python, a dictionary stores data in key-value pairs.
+
+Syntax looks like this:
+
+my_dict = { "name": "Ankit", "age": 21, "city": "Mumbai" }
+
+
+Here, name, age, and city are keys, and "Ankit", 21, and "Mumbai" are their values."
+
+2. Properties of Dictionaries
+
+Unordered (before Python 3.7), now they maintain insertion order.
+
+Keys must be unique.
+
+Values can be anything: numbers, strings, lists, or even another dictionary.
+
+Example:
+
+student = {
+    "name": "Ravi",
+    "age": 20,
+    "skills": ["Python", "SQL", "Machine Learning"],
+    "address": {"city": "Delhi", "pincode": 110001}
+}
+
+3. Accessing Elements
+
+To get values, we use the keys.
+
+print(student["name"])     # Ravi
+print(student.get("age"))  # 20
+
+
+ Using .get() is safer because it won’t throw an error if the key doesn’t exist.
+
+4. Adding and Updating Elements
+student["age"] = 21
+student["college"] = "SDBI"
+print(student)
+
+5. Removing Elements
+student.pop("age")         # removes key 'age'
+del student["name"]        # deletes 'name'
+student.clear()            # clears all elements
+
+
+6. Iterating Through Dictionary
+keys() → returns all keys
+
+values() → returns all values
+
+items() → returns key-value pairs
+
+Example:
+
+print(student.keys())
+print(student.values())
+print(student.items())
+
+
+for key, value in student.items():
+    print(key, ":", value)
