@@ -1,0 +1,49 @@
+
+In Python, error handling is done using try and except blocks. But sometimes, we need to execute some code no matter what happens, or run code only if no exceptions occur. That’s where finally and else blocks come in."
+
+1️) The finally block
+
+The finally block is always executed, no matter whether an exception occurs or not.
+
+Example:
+
+try:
+    num = int(input("Enter a number: "))
+    print("You entered:", num)
+except ValueError:
+    print("That's not a valid number!")
+finally:
+    print("This will always execute, no matter what.")
+
+
+In this example, whether the user enters a valid number or not, the finally block will always run.
+
+2️) The else block
+
+The else block is executed only if the try block did not raise any exception.
+
+Example:
+
+try:
+    num = int(input("Enter a number: "))
+except ValueError:
+    print("That's not a valid number!")
+else:
+    print("Great! You entered a valid number:", num)
+
+
+Here, the else block only runs if the user inputs a valid integer. If there is an error, it is skipped.
+
+3️) Combining all blocks:
+
+try:
+    num = int(input("Enter a number: "))
+except ValueError:
+    print("Invalid input!")
+else:
+    print("You entered:", num)
+finally:
+    print("Execution completed.")
+
+
+This is the perfect combination: try for risky code, except for errors, else for successful execution, and finally for cleanup or guaranteed actions.
